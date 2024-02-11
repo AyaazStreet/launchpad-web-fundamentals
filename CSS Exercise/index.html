@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise | Wanderlust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-grid">
+        <div id="img-container">
+            <img src="./images/background-image.jpg" alt="Surat Thani, Thailand">
+        </div>
+        <img src="./images/header/logo.png" alt="Wanderlust logo" id="logo">
+        <div id="nav">
+            <div id="pages">
+                <a href="#">Services</a>
+                <a href="#">Discovery</a>
+                <a href="#">Weather</a>
+                <a href="#">My Booking</a>
+            </div>
+            <div id="account">
+                <div id="region">
+                    <img src="./images/header/flag.png" alt="Region flag">
+                    <img src="./images/header/down-arrow.png" alt="Dropdown">
+                </div>
+                <a href="#">Login</a>
+                <div class="nav-btn">
+                    <a href="#" class="btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="form">
+                <div class="tab">
+                    <div class="tab-item active" onclick="changeTab(event, 'Hotel')">
+                        <img src="./images/tab/hotel.png" alt="Hotel Icon">
+                        <p>Hotel</p>
+                    </div>
+                    <div class="tab-item" onclick="changeTab(event, 'Flight')">
+                        <img src="./images/tab/airplane.png" alt="Flight Icon">
+                        <p>Flight</p>
+                    </div>
+                    <div class="tab-item" onclick="changeTab(event, 'Taxi')">
+                        <img src="./images/tab/taxi.png" alt="Taxi Icon">
+                        <p>Taxi</p>
+                    </div>
+                    <div class="tab-item" onclick="changeTab(event, 'Car')">
+                        <img src="./images/tab/bus.png" alt="Car Icon">
+                        <p>Car</p>
+                    </div>
+                </div>
+                <div id="Hotel" class="tab-content">
+                    <div class="input-container">
+                        <label for="destination">Destination:</label>
+                        <div class="input-box">
+                            <img src="./images/form/pin.png" alt="Location Pin Icon">
+                            <input type="text" id="destination" name="destination" value="Surat Thani, Thailand">
+                        </div>
+                    </div>
+                    <div class="input-columns">
+                        <div class="input-container">
+                            <label for="checkin">Check-in Date:</label>
+                            <div class="input-box">
+                                <img src="./images/form/calendar.png" alt="Location Pin Icon">
+                                <input type="text" id="checkin" name="checkin" value="December 31, 2021">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="checkout">Check-out Date:</label>
+                            <div class="input-box">
+                                <img src="./images/form/calendar.png" alt="Location Pin Icon">
+                                <input type="text" id="checkout" name="checkout" value="January 1, 2022">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="adults">Adlults:</label>
+                            <div class="input-box">
+                                <img src="./images/form/user.png" alt="Location Pin Icon">
+                                <input type="text" id="adults" name="adults" value="01">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="children">Children:</label>
+                            <div class="input-box">
+                                <img src="./images/form/child.png" alt="Location Pin Icon">
+                                <input type="text" id="children" name="children" value="No Children">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="room">Room:</label>
+                            <div class="input-box">
+                                <img src="./images/form/room.png" alt="Location Pin Icon">
+                                <input type="text" id="room" name="room" value="01">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn"><img src="./images/form/search.png" alt="Search Icon">Find</button>
+                </div>
+                <div id="Flight" class="tab-content">
+                    <!-- Flight -->
+                </div>
+                
+                <div id="Taxi" class="tabcontent">
+                    <!-- Taxi -->
+                </div>
+                <div id="Car" class="tab-content">
+                    <!-- Car -->
+                </div>
+            </div>
+            <div id="title">
+                <h1>Welcome to <br/><span>Wanderlust.</span></h1>
+                <h2>Jobs fill your pocket, adventures fill your soul</h2>
+            </div>
+        </div>
+        
+        <div id="socials">
+            <div class="socials-btn">
+                <img src="./images/footer/facebook.png" alt="Facebook">
+            </div>
+            <div class="socials-btn">
+                <img src="./images/footer/pinterest.png" alt="Pinterest">
+            </div>
+            <div class="socials-btn">
+                <img src="./images/footer/instagram.png" alt="Instagram">
+            </div>
+        </div>
+        <div id="footer-img-container">
+            <img src="./images/footer/question.png" alt="Help button">
+        </div>
+    </div>
+</body>
+</html>
